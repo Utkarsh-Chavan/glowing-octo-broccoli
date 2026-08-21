@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaStore - Modern Products</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        darkMode: "class"
+    };
+</script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-indigo-600">
+                    NovaStore
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition">
+                        Home
+                    </a>
+
+                    <a href="#products" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition">
+                        Products
+                    </a>
+
+                    <a href="#about" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition">
+                        About
+                    </a>
+
+                    <a href="#contact" class="text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition">
+                        Contact
+                    </a>
+
+                    <a href="#"
+                       class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700 transition">
+                        Login
+                    </a>
+
+                    <!-- Dark Mode Button -->
+                    <button
+                        id="theme-button"
+                        class="text-gray-700 dark:text-gray-200 text-xl hover:text-indigo-600 transition"
+                        aria-label="Toggle dark mode"
+                    >
+                        🌙
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button
+                    id="menu-button"
+                    class="md:hidden text-gray-700 dark:text-gray-200 text-2xl"
+                    aria-label="Open menu"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+
+                <a href="#" class="block py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600">
+                    Home
+                </a>
+
+                <a href="#products" class="block py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600">
+                    Products
+                </a>
+
+                <a href="#about" class="block py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600">
+                    About
+                </a>
+
+                <a href="#contact" class="block py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600">
+                    Contact
+                </a>
+
+                <a href="#"
+                   class="block mt-2 bg-indigo-600 text-white px-4 py-2 rounded-lg text-center">
+                    Login
+                </a>
+
+                <button
+                    id="mobile-theme-button"
+                    class="w-full mt-2 py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition"
+                >
+                    🌙 Dark Mode
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="bg-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+                <div>
+                    <p class="text-indigo-200 font-semibold mb-3">
+                        SMART SHOPPING, BETTER CHOICE
+                    </p>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Products Made for Your Everyday Life
+                    </h1>
+
+                    <p class="text-lg text-indigo-100 mb-8 max-w-xl">
+                        Discover modern, useful and reliable products designed
+                        to make your everyday life simpler and better.
+                    </p>
+
+                    <a href="#products"
+                       class="inline-block bg-white text-indigo-600 px-6 py-3 rounded-lg
+                              font-semibold hover:bg-gray-100 transition duration-300">
+                        Shop Now
+                    </a>
+                </div>
+
+                <div class="flex justify-center">
+                    <img
+                        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+                        alt="Modern shopping products"
+                        class="rounded-2xl shadow-2xl w-full max-w-lg object-cover"
+                    >
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="about" class="py-16 md:py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+                <p class="text-indigo-600 font-semibold mb-2">
+                    WHY CHOOSE US
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                    Everything You Need
+                </h2>
+
+                <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+                    We focus on quality, convenience and a better shopping
+                    experience for every customer.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Feature 1 -->
+                <div class="p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-md
+                            hover:shadow-xl hover:-translate-y-1
+                            transition duration-300">
+
+                    <div class="text-4xl mb-5">🚚</div>
+
+                    <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                        Fast Delivery
+                    </h3>
+
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Get your products delivered quickly and safely
+                        right to your doorstep.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-md
+                            hover:shadow-xl hover:-translate-y-1
+                            transition duration-300">
+
+                    <div class="text-4xl mb-5">🔒</div>
+
+                    <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                        Secure Shopping
+                    </h3>
+
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Your personal information and purchases are
+                        protected with secure payment methods.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-md
+                            hover:shadow-xl hover:-translate-y-1
+                            transition duration-300">
+
+                    <div class="text-4xl mb-5">⭐</div>
+
+                    <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                        Quality Products
+                    </h3>
+
+                    <p class="text-gray-600 dark:text-gray-400">
+                        We provide carefully selected products that
+                        combine quality and value.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products / Pricing Section -->
+    <section id="products" class="py-16 md:py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+                <p class="text-indigo-600 font-semibold mb-2">
+                    OUR PRODUCTS
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                    Choose What Fits You
+                </h2>
+
+                <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">
+                    Simple plans with useful features for different needs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Basic Plan -->
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-md p-8
+                            hover:shadow-xl hover:-translate-y-2
+                            transition duration-300">
+
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                        Basic
+                    </h3>
+
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">
+                        For everyday users
+                    </p>
+
+                    <div class="my-6">
+                        <span class="text-4xl font-bold text-gray-900 dark:text-white">
+                            ₹499
+                        </span>
+                        <span class="text-gray-500 dark:text-gray-400">
+                            /month
+                        </span>
+                    </div>
+
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-400 mb-8">
+                        <li>✓ Essential products</li>
+                        <li>✓ Standard delivery</li>
+                        <li>✓ Email support</li>
+                    </ul>
+
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg
+                                   font-semibold hover:bg-indigo-700 transition">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-indigo-600 text-white rounded-2xl shadow-xl p-8
+                            hover:-translate-y-2
+                            transition duration-300">
+
+                    <span class="inline-block bg-white text-indigo-600
+                                 text-sm font-semibold px-3 py-1 rounded-full mb-4">
+                        POPULAR
+                    </span>
+
+                    <h3 class="text-2xl font-bold">
+                        Pro
+                    </h3>
+
+                    <p class="text-indigo-100 mt-2">
+                        For regular shoppers
+                    </p>
+
+                    <div class="my-6">
+                        <span class="text-4xl font-bold">
+                            ₹999
+                        </span>
+                        <span class="text-indigo-100">
+                            /month
+                        </span>
+                    </div>
+
+                    <ul class="space-y-3 text-indigo-100 mb-8">
+                        <li>✓ Premium products</li>
+                        <li>✓ Free delivery</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+
+                    <button class="w-full bg-white text-indigo-600 py-3 rounded-lg
+                                   font-semibold hover:bg-gray-100 transition">
+                        Choose Pro
+                    </button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-white dark:bg-gray-900 rounded-2xl shadow-md p-8
+                            hover:shadow-xl hover:-translate-y-2
+                            transition duration-300">
+
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                        Premium
+                    </h3>
+
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">
+                        For the best experience
+                    </p>
+
+                    <div class="my-6">
+                        <span class="text-4xl font-bold text-gray-900 dark:text-white">
+                            ₹1499
+                        </span>
+                        <span class="text-gray-500 dark:text-gray-400">
+                            /month
+                        </span>
+                    </div>
+
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-400 mb-8">
+                        <li>✓ All premium products</li>
+                        <li>✓ Same-day delivery</li>
+                        <li>✓ 24/7 support</li>
+                    </ul>
+
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg
+                                   font-semibold hover:bg-indigo-700 transition">
+                        Go Premium
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+                <p class="text-indigo-600 font-semibold mb-2">
+                    GET IN TOUCH
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                    Contact Us
+                </h2>
+
+                <p class="text-gray-600 dark:text-gray-400 mt-4">
+                    Have a question? Send us a message and we will get back to you.
+                </p>
+            </div>
+
+            <form class="bg-gray-50 dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-md">
+
+                <!-- Name -->
+                <div class="mb-6">
+                    <label for="name"
+                           class="block text-gray-700 dark:text-gray-200 font-semibold mb-2">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600
+                               bg-white dark:bg-gray-700 text-gray-900 dark:text-white
+                               rounded-lg focus:outline-none focus:ring-2
+                               focus:ring-indigo-500 focus:border-indigo-500"
+                    >
+                </div>
+
+                <!-- Email -->
+                <div class="mb-6">
+                    <label for="email"
+                           class="block text-gray-700 dark:text-gray-200 font-semibold mb-2">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600
+                               bg-white dark:bg-gray-700 text-gray-900 dark:text-white
+                               rounded-lg focus:outline-none focus:ring-2
+                               focus:ring-indigo-500 focus:border-indigo-500"
+                    >
+                </div>
+
+                <!-- Message -->
+                <div class="mb-6">
+                    <label for="message"
+                           class="block text-gray-700 dark:text-gray-200 font-semibold mb-2">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message..."
+                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600
+                               bg-white dark:bg-gray-700 text-gray-900 dark:text-white
+                               rounded-lg focus:outline-none focus:ring-2
+                               focus:ring-indigo-500 focus:border-indigo-500"
+                    ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="w-full bg-indigo-600 text-white py-3 rounded-lg
+                           font-semibold hover:bg-indigo-700 transition duration-300"
+                >
+                    Send Message
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Website Name -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-3">
+                        NovaStore
+                    </h3>
+
+                    <p class="text-gray-400">
+                        Modern products for a simpler everyday life.
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">
+                        Follow Us
+                    </h4>
+
+                    <div class="flex space-x-5">
+                        <a href="#" class="hover:text-white transition">
+                            Facebook
+                        </a>
+
+                        <a href="#" class="hover:text-white transition">
+                            Instagram
+                        </a>
+
+                        <a href="#" class="hover:text-white transition">
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Legal Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">
+                        Legal
+                    </h4>
+
+                    <div class="flex flex-col space-y-2">
+                        <a href="#" class="hover:text-white transition">
+                            Privacy Policy
+                        </a>
+
+                        <a href="#" class="hover:text-white transition">
+                            Terms & Conditions
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>
+                    &copy; 2026 NovaStore. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
